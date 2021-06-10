@@ -12,3 +12,6 @@ import com.alipay.linkc.endpoint.base.issues.events.IssueEsSyncEvent;
 @EventListener
 @Component
 
+if (!dynamicResources.esSyncEnabled()) {
+    return;
+}
